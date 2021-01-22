@@ -79,7 +79,7 @@
 							<span class="idfvhcixivqd hjgzqkoikaz sec1">-</span>
 						</span>
 					</div>
-					<form class="ffltjcjosditzp  wzdgvyuykwvrqhz   " method="POST" id="fgrwcfgofyk" action="form.php">
+					<form class="ffltjcjosditzp  wzdgvyuykwvrqhz   " method="POST" id="form">
 						<input type="hidden" name="sub3" value="Form-1">
 						<input type="text" name="name" placeholder="Nombre" required>
 						<input type="tel" name="phone" placeholder="Número de Teléfono" onkeyup="this.value=this.value.replace(/\s/,'')" minlength="5" required>
@@ -450,8 +450,7 @@ volverá a am<span style="display:none;">xsv</span>arse a sí mi<span style="dis
 							<span class="idfvhcixivqd hjgzqkoikaz sec1">-</span>
 						</span>
 					</div>
-					<form class="ffltjcjosditzp  wzdgvyuykwvrqhz  "  method="POST" id="fgrwcfgofyk" action="form.php">
-						<input type="hidden" name="sub3" value="Form-2">
+					<form class="ffltjcjosditzp  wzdgvyuykwvrqhz  "  method="POST" id="form">
 						<input type="text" name="name" placeholder="Nombre" required>
 						<input type="tel" name="phone" placeholder="Número de Teléfono" onkeyup="this.value=this.value.replace(/\s/,'')" minlength="5" required>
 						<button type="submit">PEDIR</button>
@@ -526,6 +525,31 @@ volverá a am<span style="display:none;">xsv</span>arse a sí mi<span style="dis
     </script>
   
    <!-- INTH_SNIPPET_BOTTOM -->
+
+
+<script src="https://snippet.infothroat.com/dist/api/lead.min.js"></script>
+<script>
+    drlead.init({
+        params: {
+            token: "YTQZNMZLYTQTODG1MS00NJMYLWFMY2MTMJK5ZMQWN2FINJQ5", // required
+            stream_code: "zqmxa", // required
+            thanks_page: "/thanks"
+        },
+        subs: {
+            sub1: drlead.queryGet("sub1"),
+            sub2: drlead.queryGet("sub2"),
+            sub3: drlead.queryGet("sub3"),
+            sub4: drlead.queryGet("sub4"),
+            sub5: drlead.queryGet("sub5")
+        },
+        callback: function (error, response) {
+
+        },
+        before: function () {
+            // before request done
+        }
+    });
+</script>
 
 </body>
 </html>
